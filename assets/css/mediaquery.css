@@ -1,0 +1,41 @@
+@media (max-width: 768px){
+    .card-md{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%; 
+    }
+
+    aside > .footer-extra-links{
+        width: 100%;
+        margin: 0;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    aside > .footer-extra-links > div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+    }
+    .aside-header{
+        border-bottom: 1px solid grey;
+        margin: 1em 0;
+        width: 100%;
+        padding-top: 1em;
+    }
+    .aside-list{
+        display: none;
+    }
+
+   /* .footer-extra-links{
+       display: flex;
+       flex-wrap: wrap;
+   } */
+
+   /* [idˆ=footer-grid-]{
+       width: 100%;
+   } */
+}

@@ -5,24 +5,6 @@ body{
     top: 0;
 }
 
-nav{
-    width: 100%;
-    background-color: rgb(45,45,45);
-    position: sticky;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 38px;
-}
-
-#nav-menu{
-    display: none;
-}
-
-
 header{
     width: 100%;
     text-align: center;
@@ -36,42 +18,16 @@ header{
     
 }
 
+nav{
+    font-size: 10px;
+}
+
 a{
     text-decoration: none;
     color: rgb(0,100,255);
 }
 
 a:hover{
-    text-decoration: underline;
-}
-
-.navbar-sm{
-    display: none;
-}
-
-.navbar{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 300;
-    margin: 0;
-    padding-left: 0;
-}
-
-.navbar-item{
-    text-decoration: none;
-    padding: 0 1em;;
-}
-
-.navbar-item a{
-    color: rgb(215, 215, 215);
-}
-
-.navbar-item:hover a{
-    color: white;
     text-decoration: underline;
 }
 
@@ -198,8 +154,13 @@ main{
 }
 
 footer{
+    /* text-align: center; */
     color: black;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width: 768px; */
     margin: 1em 0em;
     font-size: 12px;
     background-color: rgb(245, 245, 245);
@@ -209,6 +170,7 @@ footer{
     color: grey;
     border-bottom: 1px solid rgb(145, 145, 145);
     padding: 1em;
+    width: 767px;
 }
 
 .footnotes p{
@@ -216,34 +178,51 @@ footer{
 }
 
 aside{
-    width: 97.35%;
-    height: 425px;
+    /* width: 97.35%; */
+    width: 767px;
+    height: 500px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap; 
     margin: 1em;
 
     color: grey;
 }
 
-aside > div{
-    width: 19%;
+@media(min-width: 767px){
+    #footer-grid-4{
+        height: 401px;
+    }
 }
 
-aside h4{
-    padding-bottom: .1em;
+aside > .footer-extra-links{
+    width: 20%;
+}
+
+aside .aside-header{
+    padding-bottom: .8em;
     margin: 0;
+    color: black;
+    font-size: 12px;
 }
 
 aside ul{
     list-style:  none;
     padding-left: 0;
+    font-weight: 200;
 }
 
-aside li{
-    padding-bottom: .7em;
+aside .aside-list li{
+
+    padding-bottom: 1em;
+    /* padding-bottom: .7em; */
+    /* width: 100%; */
 }
 
-aside a{
+aside .aside-link{
     color: black;
 }
 

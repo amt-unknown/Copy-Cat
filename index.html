@@ -5,59 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./styles.css" rel="stylesheet" type="text/css">
-    <link href="./mediaquery.css" rel="stylesheet" type="text/css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/mediaquery.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/navbar.css" rel="stylesheet" type="text/css">
+
     <title>Copy Cat of Apple</title>
 </head>
 <body>
-    <nav>
-        <ul class="navbar-sm">
-            <li class="navbar-item-sm"><a href="">Menu</a></li>
-            <li class="navbar-item-sm"><a href="">Apple</a></li>
-            <li class="navbar-item-sm"><a href="">Bag</a></li>
-        </ul>    
-        <ul class="navbar">
-            <li class="navbar-item" id="brand-icon">
-                <a href="">Apple</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Store</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Mac</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">iPad</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">iPhone</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Watch</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">AirPods</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">TV & Home</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Only on Apple</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Accessories</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Support</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Search</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Bag<g/a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav-color">
+        <div class="container-fluid"  id="navbar-custom">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" id="apple-icon-collapsed" href="#">Apple</a>
+            <a class="navbar-brand" id="store-bag-collapsed" href="#">Bag</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" id="search-bar-box">
+                    <input class="form-control me-2"  id="search-bar" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item" id="apple-icon-expanded">
+                        <a class="nav-link" href="#">Apple</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">AirPods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">TV & Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Only on Apple</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Support</a>
+                    </li>
+                    <li class="nav-item"  id="search-expanded">
+                        <button class="nav-button">
+                            Search
+                        </button>
+                    </li>
+                    <li class="nav-item"  id="store-bag-expanded">
+                        <a class="nav-link" href="#">Bag</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <header>
         <p class="header-firstline"><a href="">Shop online</a> and get Specialist help, free 
@@ -75,7 +90,7 @@
                 <a href="">Learn more ></a>
                 <a href="">Buy ></a>
             </div>
-            <img src="http://placekitten.com/290/300" alt="">
+            <img src="http://placekitten.com/580/300" alt="">
         </div>
         <div class="card-lg" id="card-lg-2" style="background-color: rgb(51, 30, 59); z-index: -2;">
             <h2>iPhone 13</h2>
@@ -178,248 +193,261 @@
             </p>
         </div>
         <aside>
-            <div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-1">
                     <h4 class="aside-header">Shop and Learn</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Store</a>
+                            <a href="" class="aside-link">Store</a>
                         </li>
                         <li>
-                            <a href="">Mac</a>
+                            <a href="" class="aside-link">Mac</a>
                         </li>
                         <li>
-                            <a href="">iPad</a>
+                            <a href="" class="aside-link">iPad</a>
                         </li>
                         <li>
-                            <a href="">iPhone</a>
+                            <a href="" class="aside-link">iPhone</a>
                         </li>
                         <li>
-                            <a href="">Watch</a>
+                            <a href="" class="aside-link">Watch</a>
                         </li>
                         <li>
-                            <a href="">AirPods</a>
+                            <a href="" class="aside-link">AirPods</a>
                         </li>
                         <li>
-                            <a href="">TV & Home</a>
+                            <a href="" class="aside-link">TV & Home</a>
                         </li>
                         <li>
-                            <a href="">iPod touch</a>
+                            <a href="" class="aside-link">iPod touch</a>
                         </li>
                         <li>
-                            <a href="">AirTag</a>
+                            <a href="" class="aside-link">AirTag</a>
                         </li>
                         <li>
-                            <a href="">Accessories</a>
+                            <a href="" class="aside-link">Accessories</a>
                         </li>
                         <li>
-                            <a href="">Gift Cards</a>
+                            <a href="" class="aside-link">Gift Cards</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-2">
                     <h4 class="aside-header">Services</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Apple Music</a>
+                            <a href="" class="aside-link">Apple Music</a>
                         </li>
                         <li>
-                            <a href="">Apple TV+</a>
+                            <a href="" class="aside-link">Apple TV+</a>
                         </li>
                         <li>
-                            <a href="">Apple Fitness+</a>
+                            <a href="" class="aside-link">Apple Fitness+</a>
                         </li>
                         <li>
-                            <a href="">Apple News+</a>
+                            <a href="" class="aside-link">Apple News+</a>
                         </li>
                         <li>
-                            <a href="">Apple Arcade</a>
+                            <a href="" class="aside-link">Apple Arcade</a>
                         </li>
                         <li>
-                            <a href="">iCloud</a>
+                            <a href="" class="aside-link">iCloud</a>
                         </li>
                         <li>
-                            <a href="">Apple One</a>
+                            <a href="" class="aside-link">Apple One</a>
                         </li>
                         <li>
-                            <a href="">Apple Card</a>
+                            <a href="" class="aside-link">Apple Card</a>
                         </li>
                         <li>
-                            <a href="">Apple Books</a>
+                            <a href="" class="aside-link">Apple Books</a>
                         </li>
                         <li>
-                            <a href="">Apple Podcasts</a>
+                            <a href="" class="aside-link">Apple Podcasts</a>
                         </li>
                         <li>
-                            <a href="">App Store</a>
+                            <a href="" class="aside-link">App Store</a>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-3">
                     <h4 class="aside-header">Account</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Manage Your Apple ID</a>
+                            <a href="" class="aside-link">Manage Your Apple ID</a>
                         </li>
                         <li>
-                            <a href="">Apple Store Acount</a>
+                            <a href="" class="aside-link">Apple Store Acount</a>
                         </li>
                         <li>
-                            <a href="">iCloud.com</a>
+                            <a href="" class="aside-link">iCloud.com</a>
                         </li>
                         
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-4">
                     <h4 class="aside-header">Apple Store</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Find a Store</a>
+                            <a href="" class="aside-link">Find a Store</a>
                         </li>
                         <li>
-                            <a href="">Genius Bar</a>
+                            <a href="" class="aside-link">Genius Bar</a>
                         </li>
                         <li>
-                            <a href="">Today at Apple</a>
+                            <a href="" class="aside-link">Today at Apple</a>
                         </li>
                         <li>
-                            <a href="">Apple Camp</a>
+                            <a href="" class="aside-link">Apple Camp</a>
                         </li>
                         <li>
-                            <a href="">Apple Store App</a>
+                            <a href="" class="aside-link">Apple Store App</a>
                         </li>
                         <li>
-                            <a href="">Refurbished and Clearance</a>
+                            <a href="" class="aside-link">Refurbished and Clearance</a>
                         </li>
                         <li>
-                            <a href="">Financing</a>
+                            <a href="" class="aside-link">Financing</a>
                         </li>
                         <li>
-                            <a href="">Apple Trade In</a>
+                            <a href="" class="aside-link">Apple Trade In</a>
                         </li>
                         <li>
-                            <a href="">Order Status</a>
+                            <a href="" class="aside-link">Order Status</a>
                         </li>
                         <li>
-                            <a href="">Shopping Help</a>
+                            <a href="" class="aside-link">Shopping Help</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-5">
                     <h4 class="aside-header">For Business</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Apple and Business</a>
+                            <a href="" class="aside-link">Apple and Business</a>
                         </li>
                         <li>
-                            <a href="">Shop for Business</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer-grid-6">
-                    <h4 class="aside-header">For Education</h4>
-                    <ul class="aside-list">
-                        <li>
-                            <a href="">Apple and Education</a>
-                        </li>
-                        <li>
-                            <a href="">Shop for K-12</a>
-                        </li>
-                        <li>
-                            <a href="">Shop for College</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer-grid-7">
-                    <h4 class="aside-header">For Healthcare</h4>
-                    <ul class="aside-list">
-                        <li>
-                            <a href="">Apple in HealthCare</a>
-                        </li>
-                        <li>
-                            <a href="">Health on Apple Watch</a>
-                        </li>
-                        <li>
-                            <a href="">Health Records on iPhone</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer-grid-8">
-                    <h4 class="aside-header">For Government</h4>
-                    <ul class="aside-list">
-                        <li>
-                            <a href="">Shop for Government</a>
-                        </li>
-                        <li>
-                            <a href="">Shop for Veterans and Military</a>
+                            <a href="" class="aside-link">Shop for Business</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer-extra-links">
+                <div id="footer-grid-6">
+                    <h4 class="aside-header">For Education</h4>
+                    <ul class="aside-list">
+                        <li>
+                            <a href="" class="aside-link">Apple and Education</a>
+                        </li>
+                        <li>
+                            <a href="" class="aside-link">Shop for K-12</a>
+                        </li>
+                        <li>
+                            <a href="" class="aside-link">Shop for College</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-extra-links">
+                <div id="footer-grid-7">
+                    <h4 class="aside-header">For Healthcare</h4>
+                    <ul class="aside-list">
+                        <li>
+                            <a href="" class="aside-link">Apple in HealthCare</a>
+                        </li>
+                        <li>
+                            <a href="" class="aside-link">Health on Apple Watch</a>
+                        </li>
+                        <li>
+                            <a href="" class="aside-link">Health Records on iPhone</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-extra-links">
+                <div id="footer-grid-8">
+                    <h4 class="aside-header">For Government</h4>
+                    <ul class="aside-list">
+                        <li>
+                            <a href="" class="aside-link">Shop for Government</a>
+                        </li>
+                        <li>
+                            <a href="" class="aside-link">Shop for Veterans and Military</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-9">
                     <h4 class="aside-header">Apple Values</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Accessibility</a>
+                            <a href="" class="aside-link">Accessibility</a>
                         </li>
                         <li>
-                            <a href="">Education</a>
+                            <a href="" class="aside-link">Education</a>
                         </li>
                         <li>
-                            <a href="">Environment</a>
+                            <a href="" class="aside-link">Environment</a>
                         </li>
                         <li>
-                            <a href="">Inclusion and Diversity</a>
+                            <a href="" class="aside-link">Inclusion and Diversity</a>
                         </li>
                         <li>
-                            <a href="">Privacy</a>
+                            <a href="" class="aside-link">Privacy</a>
                         </li>
                         <li>
-                            <a href="">Racial Equity and Justice</a>
+                            <a href="" class="aside-link">Racial Equity and Justice</a>
                         </li>
                         <li>
-                            <a href="">Supplier Responsiblity</a>
+                            <a href="" class="aside-link">Supplier Responsiblity</a>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer-extra-links">
                 <div id="footer-grid-10">
                     <h4 class="aside-header">About Apple</h4>
                     <ul class="aside-list">
                         <li>
-                            <a href="">Newsroom</a>
+                            <a href="" class="aside-link">Newsroom</a>
                         </li>
                         <li>
-                            <a href="">Apple Leadership</a>
+                            <a href="" class="aside-link">Apple Leadership</a>
                         </li>
                         <li>
-                            <a href="">Career Opportunities</a>
+                            <a href="" class="aside-link">Career Opportunities</a>
                         </li>
                         <li>
-                            <a href="">Investors</a>
+                            <a href="" class="aside-link">Investors</a>
                         </li>
                         <li>
-                            <a href="">Ethics & Compliance</a>
+                            <a href="" class="aside-link">Ethics & Compliance</a>
                         </li>
                         <li>
-                            <a href="">Events</a>
+                            <a href="" class="aside-link">Events</a>
                         </li>
                         <li>
-                            <a href="">Contact Apple</a>
+                            <a href="" class="aside-link">Contact Apple</a>
                         </li>
                     </ul>
                 </div>
+            </div>
             </div>
         </aside>
         <div class="aside-bottom">
             <p>More way to shop: <a href="">Find an Apple Store</a> or <a href="">other retailer near you.</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/navbar.js"></script>
 </body>
 </html>
